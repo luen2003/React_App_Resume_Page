@@ -280,7 +280,10 @@ button {
 
 .primary-btn:hover {
   background-color: rgb(255, 0, 225);
-  box-shadow: 0 13px 27px 0 rebeccapurple;
+  box-shadow:
+      0 0 15px plum,
+      0 0 30px plum,
+      0 0 45px plum;
 }
 
 .home .right {
@@ -1942,3 +1945,62 @@ footer .box ul li {
 footer a:hover {
   color: #fff!important;
 }
+
+.active-link {
+    box-shadow:
+        0 0 15px #00eaff,
+        0 0 30px #00eaff,
+        0 0 45px #00eaff;
+    border-radius: 6px;
+}
+.active-link a {
+    color: #00eaff;
+}
+
+.nav-links li:not(.icon):hover {
+    box-shadow:
+        0 0 12px orangered,
+        0 0 22px orangered,
+        0 0 32px orangered;
+    border-radius: 6px;
+}
+
+.nav-links li:not(.icon):hover a {
+    color: #fff;
+}
+
+.nav-links-sidebar li:hover {
+    background: orangered;
+    box-shadow:
+        0 0 12px orangered,
+        0 0 22px orangered,
+        0 0 32px orangered;
+    border-radius: 6px;
+}
+
+.nav-links-sidebar li:hover a {
+    color: #fff;
+}
+
+.header {
+  width: 100%;
+  padding: 20px 0;
+  background: rgb(248, 248, 255);
+  position: relative;
+  transition: 0.3s ease;
+  z-index: 999;
+}
+.header.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgb(248, 248, 255);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+  padding: 10px 0;
+  z-index: 9999;
+}
+
+
+
+
