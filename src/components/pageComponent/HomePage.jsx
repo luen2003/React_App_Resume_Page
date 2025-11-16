@@ -6,7 +6,6 @@ import { Skill } from '../home/header/homes/Skill';
 import { WrapperOne } from '../home/header/homes/WrapperOne';
 import { Service } from '../home/services/Service';
 import { Wrapper } from '../home/Wrapper';
-import { City } from '../home/header/homes/City';
 import { Link } from 'react-router-dom';
 import hexagon from '../../assets/hexagon.png';
 
@@ -124,7 +123,6 @@ export const HomePage = () => {
       <Service className="reveal" />
       <Wrapper className="reveal" />
       <Skill className="reveal" />
-      <City className="reveal" />
       <WrapperOne className="reveal" />
     </>
   );
