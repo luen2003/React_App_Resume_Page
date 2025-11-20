@@ -2,6 +2,7 @@
   import headerImg from '../../../../assets/main.png';
   import introBackground from '../../../../assets/IntroBackground.mp4';
   import outputEffect from '../../../../assets/output.mp4';
+  import outputImage from '../../../../assets/output.gif';
   import { Link } from 'react-router-dom';
   import './Home.css';
 
@@ -80,12 +81,12 @@
 
         <section className={`home ${className}`} >
           <div className="container flex">
-            {/* <div className="left">
-              <div className="img">
-                <img src={headerImg} alt="" />
-              </div>
-            </div> */}
             <div className="left">
+              <div className="img">
+                <img src={outputImage} alt="" />
+              </div>
+            </div>
+            {/* <div className="left">
               <div className="video-wrapper">
                 <video
                   autoPlay
@@ -97,7 +98,7 @@
                   <source src={outputEffect} type="video/mp4" />
                 </video>
               </div>
-            </div>
+            </div> */}
             <div className="right topMargin" style={{ marginTop: '-22px' }}>
               <div className="direction">
                 <div className="headline">
