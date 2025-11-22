@@ -21,11 +21,14 @@
 .carousel_carousel_item {
   background: linear-gradient(90deg,  #FF8800, #A033FF, #0088FF, #FF5C87);
   background-size: 300% 300%;
+  background-clip: text;
   -webkit-background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
   animation: gradientMove 6s linear infinite;
   font-weight: 800;
 }
+
 
 .carousel_carousel_container {
   overflow: hidden;
