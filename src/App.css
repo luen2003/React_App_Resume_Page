@@ -1132,7 +1132,7 @@ marquee {
   z-index: -1;
 }
 
-
+/* 
 .btn-led {
   position: relative;
   padding: 15px 40px;
@@ -1237,7 +1237,112 @@ marquee {
   100% {
     bottom: 100%;
   }
+} */
+
+.btn-led {
+  position: relative;
+  padding: 15px 40px;
+  background: aquamarine;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
 }
+
+/* --------- BASE STYLE --------- */
+.btn-led span {
+  position: absolute;
+  display: block;
+  background:  #1269ba;
+}
+
+:root {
+  --line-length: 150px; 
+}
+
+/* ===== LINE 1 ===== */
+.btn-led span:nth-child(1) {
+  height: 2px; width: var(--line-length);
+  top: 0; left: -45px;
+  animation: moveTop 1s linear infinite;
+}
+
+.btn-led span:nth-child(2) {
+  width: 2px; height: var(--line-length);
+  right: 0; top: -45px;
+  animation: moveRight 1s linear infinite;
+  animation-delay: .25s;
+}
+
+.btn-led span:nth-child(3) {
+  height: 2px; width: var(--line-length);
+  bottom: 0; right: -45px;
+  animation: moveBottom 1s linear infinite;
+  animation-delay: .5s;
+}
+
+.btn-led span:nth-child(4) {
+  width: 2px; height: var(--line-length);
+  left: 0; bottom: -45px;
+  animation: moveLeft 1s linear infinite;
+  animation-delay: .75s;
+}
+
+/* ===== LINE 2 (lệch pha) ===== */
+.btn-led .line2 {
+  opacity: .9;
+}
+
+.btn-led .line2:nth-child(5) {
+  height: 2px; width: var(--line-length);
+  top: 0; left: -45px;
+  animation: moveTop 1s linear infinite;
+  animation-delay: .5s;
+}
+
+.btn-led .line2:nth-child(6) {
+  width: 2px; height: var(--line-length);
+  right: 0; top: -45px;
+  animation: moveRight 1s linear infinite;
+  animation-delay: .75s;
+}
+
+.btn-led .line2:nth-child(7) {
+  height: 2px; width: var(--line-length);
+  bottom: 0; right: -45px;
+  animation: moveBottom 1s linear infinite;
+  animation-delay: 1s;
+}
+
+.btn-led .line2:nth-child(8) {
+  width: 2px; height: var(--line-length);
+  left: 0; bottom: -45px;
+  animation: moveLeft 1s linear infinite;
+  animation-delay: 1.25s;
+}
+
+/* ====== ANIMATIONS ====== */
+@keyframes moveTop {
+  0% { left: -45px; }
+  100% { left: calc(100% + 45px); }
+}
+
+@keyframes moveRight {
+  0% { top: -45px; }
+  100% { top: calc(100% + 45px); }
+}
+
+@keyframes moveBottom {
+  0% { right: -45px; }
+  100% { right: calc(100% + 45px); }
+}
+
+@keyframes moveLeft {
+  0% { bottom: -45px; }
+  100% { bottom: calc(100% + 45px); }
+}
+
 
 .btn-pulse-wrapper {
   position: relative;

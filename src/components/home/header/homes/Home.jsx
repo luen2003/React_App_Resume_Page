@@ -152,6 +152,12 @@ export const Home = ({ className }) => {
                 <span></span>
                 <span></span>
                 <span></span>
+
+                <span class="line2"></span>
+                <span class="line2"></span>
+                <span class="line2"></span>
+                <span class="line2"></span>
+
               </button>
             </div>
 
